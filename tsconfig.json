@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "lib": ["dom", "esnext"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "outDir": "./build",
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "ignoreDeprecations": "6.0",
+    "plugins": [{ "transform": "typescript-transform-paths" }, { "transform": "typescript-transform-paths", "afterDeclarations": true }],
+    "paths": {
+      "@gig/*": ["src/*"]
+    },
+    "types": ["jest", "node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
